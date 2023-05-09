@@ -1,19 +1,8 @@
 {
-  "usuarios": [
-    {
-      "identificacion": "1098803231",
-      "nombre": "david",
-      "apellido": "alvarez",
-      "telefono": "3155124686",
-      "nacimiento": "2023-05-03",
-      "ciudad": "Bucaramanga",
-      "pais": "Colombia",
-      "correo": "jonathandalvarez7@gmail.com",
-      "id": 1
-    }
-  ],
+  "usuarios": [],
   "rutas": [],
   "flotas": [],
   "compra": [],
+  "embarque": [],
   "personal": []
 }
