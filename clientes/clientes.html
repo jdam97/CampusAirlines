@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="clientes.js" defer></script>
+
+</head>
+<body>
+    <header class="hero-image-clientes">
+        <h1>CLIENTES</h1>
+
+        <nav class="navegacion">
+            <a href="../index.html">Inicio</a>
+            <a href="../rutas/rutas.html">Rutas Aereas</a>
+            <a href="../flota/flota.html">Flota Aerea</a>
+            <a href="../etiquetas/etiquetas.html">Compra de Etiquetas</a>
+            <a href="../embarque/embarque.html">Embarque</a>
+            <a href="../personal/personal.html">Personal</a>
+        </nav>
+
+        <form id="formulario">
+            <input type="text" name="identificacion" placeholder="Número de Identificacion">
+            <input type="text" name="nombre" placeholder="nombre"> 
+            <input type="text" name="apellido" placeholder="Apellidos">
+            <input type="text" name="telefono" placeholder="Teléfono">
+            <input type="date" name="nacimiento" placeholder="Fecha de nacimiento">
+            <input type="text" name="ciudad" placeholder="Ciudad de origen">
+            <input type="text" name="pais" placeholder="País de origen">
+            <input type="email" name="correo" placeholder="Correo electrónico">
+            
+            <div class="button-submit">
+                <button type="submit" data-action="POST">POST</button>
+                <button type="submit" data-action="GET">GET</button>
+            </div>
+    
+            
+        </form>
+    </header>
+    
+   
+       
+        <div class="titulo-registro-clientes">
+            <h2>REGISTRO CLIENTES</h2>
+        </div>
+        <div class="contenedor-registros">
+
+            <div class="registros">
+                <table class="table" >
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Identificacion</th>
+                        <th scope="col">nombre</th>
+                        <th scope="col">apellido</th>
+                        <th scope="col">telefono</th>
+                        <th scope="col">nacimiento</th>
+                        <th scope="col">ciudad</th>
+                        <th scope="col">país</th>
+                        <th scope="col">correo</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <!-- Acá se agrega mi dom -->
+                    <tbody>
+                      
+                    </tbody>
+                </table>
+            </div>
+        </div>
+</body>
+</html>

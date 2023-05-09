@@ -1,0 +1,130 @@
+@import url(../style.css);
+
+/* Header */
+.hero-image-clientes{
+    background-image: linear-gradient(rgba(0,0,0,0.5)
+    ,rgba(0,0,0,0.5)),
+    url(../img/paisaje-avion-volando-cielo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-image-clientes h1{
+    color: white;
+    font-size: 50px;
+}
+
+
+/* Formulario */
+form{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    
+}
+
+form input{
+    padding: .3rem;
+    border-radius: .6rem;
+    width: 40rem;
+    color: white;
+    background-color: transparent;
+    
+}
+form input::placeholder{
+    color: lightseagreen;
+}
+.button-submit{
+    display: flex;
+    gap: 1rem   ;
+}
+
+
+
+form button{
+    background-color: transparent;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    margin: 0 auto;
+    transition: background-color .5s ease-out;
+    border: none;
+    width: auto;
+    cursor: pointer;
+    border: thin solid gray;
+}
+
+form button:hover{
+    background-color: #fff;
+    border: thin solid  darkturquoise;
+    color: darkturquoise;
+}
+
+@media (max-width: 900px){ 
+    .form{
+      padding: 0;
+      
+    } 
+    form input{
+        width: 25rem;
+    }
+    .button-submit{
+        flex-direction: column;
+    }
+    .button-submit button{
+        padding: 0;
+    }
+}
+
+.titulo-registro-clientes{
+    text-align: center;
+    padding: 1rem;
+    font-size: 24px;
+}
+
+.contenedor-registro{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.registro-letra{
+    font-size: 9px;
+    color: black;
+}
+
+.contenedor-buttons{
+    display: flex;
+    gap: 1rem;
+}
+
+.delete{
+    padding: .5rem  ;
+    color: white;
+    background-color: red;
+    opacity: .8;
+    transition: 1s;
+}   
+.delete:hover{
+    cursor: pointer;
+    background-color: white;
+    color: red;
+} 
+
+
+@media (max-width: 900px){ 
+   .table{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   }
+}
